@@ -3,6 +3,8 @@ mongoose.Promise = Promise
 
 const {MONGODB_URI, MONGODB_URI_TEST, NODE_ENV}= process.env
 
+console.log({NODE_ENV})
+
 const connectionString= NODE_ENV == 'test'
 
     ? MONGODB_URI_TEST
